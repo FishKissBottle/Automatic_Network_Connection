@@ -35,19 +35,26 @@ Windows系统提供了“任务计划程序”能够为解决这一问题提供�
   - 点击“新建”按钮，可以新创建一个触发器。
   - 这里可以定义与添加多个触发器，但是最重要的还是图中的第一个触发器，每隔一段时间检测网络是否连通，不连通的话出发任务。当然，也可以新建其他触发器，如图中就创建了一个在计算机启动时执行任务的触发器。
 
-![创建任务_触发器_图示](.\Pic\创建任务_触发器_图示拼接.png)
+<p align="center">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/创建任务_触发器_图示拼接.png?raw=1" height="260" alt="创建任务_触发器_图示2">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/创建任务_触发器_图示拼接.png?raw=1" height="260" alt="创建任务_触发器_图示3">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/创建任务_触发器_图示拼接.png?raw=1" height="260" alt="创建任务_触发器_图示3">
+</p>
 
 - 在操作下：
   - 操作是指：触发器决定执行任务之后，我们要告诉计算机做什么，在这里就是让它去检测网络是否连通，如果连通则什么也不做，如果不连通，那么重新连接指定的网络。
 
-![](.\Pic\创建任务_操作_图示.png)
-
-![](.\Pic\创建任务_操作_图示2.png)
+<p align="center">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/创建任务_操作_图示.png?raw=1" height="260" alt="创建任务_操作_图示">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/创建任务_操作_图示2.png?raw=1" height="260" alt="创建任务_操作_图示2">
+</p>
 
 - 在条件下：
   - 如果是笔记本电脑，可以选择将“只有在计算机使用交流电源时才启动此任务”取消勾选。
 
-![](.\Pic\创建任务_条件_图示.png)
+<p align="center">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/创建任务_条件_图示.png?raw=1" width="50%" alt="创建任务_条件_图示">
+</p>
 
 - 点击确定，即可完成任务的设定（有密码的可能还要输入密码才能完成）。
 
@@ -57,7 +64,9 @@ Windows系统提供了“任务计划程序”能够为解决这一问题提供�
 
 在操作的流程中，我们使用wscript执行.vbs文件中的代码，在.vbs文件中我们又调用了.ps1文件的代码，.vbs与.ps1文件被存储在C盘Scripts文件夹下，路径与结构如图所示（直接创建.txt文件然后改后缀名就行）：
 
-![](.\Pic\路径与结构图示.png)
+<p align="center">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/路径与结构图示.png?raw=1" width="50%" alt="路径与结构图示">
+</p>
 
 - run_hidden.vbs中的代码：
 
@@ -115,7 +124,9 @@ if (-not $ok) {
 - Tip1：为什么要嵌套两层进行调用？
   - 当然可以在针对“操作”的设置时直接使用powershell进行执行，如下图所示。但是这样的话，每隔五分钟在任务执行的时候会弹出一个powershell窗口闪一下，然后立刻退出，这非常影响使用体验，因此搭建两层嵌套着调用能避免这个问题。
 
-![](.\Pic\Tips图示.png)
+<p align="center">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/Tips图示.png?raw=1" width="50%" alt="Tips图示">
+</p>
 
 ```
 -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File "C:\Scripts\wifi_reconnect.ps1"
@@ -124,7 +135,9 @@ if (-not $ok) {
 - Tip2：查看网关的方法
   - Win + R，输入ipconfig，将网关填入.ps1文件的$testHost中
 
-![](.\Pic\ipconfig图示.png)
+<p align="center">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/ipconfig图示.png?raw=1" width="50%" alt="ipconfig图示">
+</p>
 
 # 3 WiFi属性设置
 
@@ -133,11 +146,15 @@ if (-not $ok) {
 - Win11：点击右下角
   - 高级Wi-Fi网络属性→编辑
 
-![](.\Pic\Wifi设置进入.png)
+<p align="center">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/Wifi设置进入.png?raw=1" width="50%" alt="Wifi设置进入">
+</p>
 
 - Win10：控制面板→网络和Internet→查看网络状态和任务→WLAN(XXXX)→无线属性(W)
 
-![](.\Pic\Wifi设置进入4.png)
+<p align="center">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/Wifi设置进入4.png?raw=1" width="50%" alt="Wifi设置进入4">
+</p>
 
 - 在弹出的“无线网络属性”中：
   - 在“连接”选项卡中，可以考虑勾选“当此网络在范围内时自动连接”以及“即使网络未广播其名称也连接（SSID）”。
@@ -145,11 +162,11 @@ if (-not $ok) {
   - 点击“高级设置(D)”，在“802.1X设置”选项卡下，选择“用户或计算机身份验证”（“用户身份验证”也可），可以选择保存一下凭据（WiFi的账号和密码）。
   - 然后网络会被断开，重新连接一下即可（这次连接需要重新输入账号和密码）。
 
-![](.\Pic\Wifi设置进入3.png)
-
-![](.\Pic\Wifi设置进入5.png)
-
-![](.\Pic\Wifi设置进入6.png)
+<p align="center">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/Wifi设置进入3.png?raw=1" height="260" alt="Wifi设置进入3">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/Wifi设置进入5.png?raw=1" height="260" alt="Wifi设置进入5">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/Wifi设置进入6.png?raw=1" height="260" alt="Wifi设置进入6">
+</p>
 
 # 4 远程桌面（RDP）
 
@@ -160,20 +177,25 @@ if (-not $ok) {
 - 需要注意的是貌似只有Window专业版才能开启远程桌面
 - 进行远程控制以及被远程控制的电脑需均要通过：设置→系统→远程桌面，开启远程桌面功能
 
-![](.\Pic\远程桌面_图示.png)
+<p align="center">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/远程桌面_图示.png?raw=1" width="50%" alt="远程桌面_图示">
+</p>
 
 ## 4.2 生成XXX.rfp文件
 
 - Win + R，输入mstsc
 - 需要输入被远程计算机的IP地址，可以开始远程控制，IP地址依然是通过ipconfig在查询。
 
-![](.\Pic\远程桌面_图示2.png)
+<p align="center">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/远程桌面_图示2.png?raw=1" width="50%" alt="远程桌面_图示2">
+</p>
 
 - 可以根据网络情况以及需求等进行一些设置
 
-![](.\Pic\远程桌面_图示3.png)
-
-![](.\Pic\远程桌面_图示4.png)
+<p align="center">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/远程桌面_图示3.png?raw=1" height="260" alt="远程桌面_图示3">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/远程桌面_图示4.png?raw=1" height="260" alt="远程桌面_图示4">
+</p>
 
 ## 4.3 开机时自动选择开机账户并输入密码进行登录
 
@@ -191,7 +213,9 @@ if (-not $ok) {
   - 第二个命名为DefaultUserName，并设置值为：你的账户名
   - 第三个命名为DefaultPassWord，并设置值为：你的账户密码
 
-![](.\Pic\自动登录_图示.png)
+<p align="center">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/自动登录_图示.png?raw=1" width="50%" alt="自动登录_图示">
+</p>
 
 - Tips：如果在触发器中额外添加了“启动时”进行执行的话，虽然被远程控制的计算机会在开机时候执行任务连上WiFi，但是一旦RDP进行接管，那么依然会出现网络断开的情况。
 
@@ -202,4 +226,6 @@ if (-not $ok) {
 那么我比较懒，使用的是SakuraFrp，并非广子，真的在用。如果有友友有更好用的内网穿透技术，还麻烦推荐给我一下，不胜感激！SakuraFrp的使用教程还请查看他们的官网
 φ(゜▽゜*)♪
 
-![](.\Pic\远程桌面_图示5.png)
+<p align="center">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/远程桌面_图示5.png?raw=1" width="50%" alt="远程桌面_图示5">
+</p>
