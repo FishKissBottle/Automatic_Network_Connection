@@ -18,7 +18,9 @@ Windows系统提供了“任务计划程序”能够为解决这一问题提供�
 
 - 右击开始图标→计算机管理→任务计划程序→创建任务
 
-<img src=".\Pic\创建任务图示.png" style="zoom:50%;" />
+<p align="center">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/创建任务图示.png?raw=1" width="50%" alt="创建任务图示.png">
+</p>
 
 - 在常规下：
   - 设置任务的名称
