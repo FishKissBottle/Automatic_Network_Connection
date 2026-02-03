@@ -163,9 +163,9 @@ if (-not $ok) {
   - 然后网络会被断开，重新连接一下即可（这次连接需要重新输入账号和密码）。
 
 <p align="center">
-  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/Wifi设置进入3.png?raw=1" height="230" alt="Wifi设置进入3">
-  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/Wifi设置进入5.png?raw=1" height="230" alt="Wifi设置进入5">
-  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/Wifi设置进入6.png?raw=1" height="230" alt="Wifi设置进入6">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/Wifi设置进入3.png?raw=1" height="260" alt="Wifi设置进入3">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/Wifi设置进入5.png?raw=1" height="260" alt="Wifi设置进入5">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/Wifi设置进入6.png?raw=1" height="260" alt="Wifi设置进入6">
 </p>
 
 # 4 远程桌面（RDP）
