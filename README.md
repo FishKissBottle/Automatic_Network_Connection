@@ -136,7 +136,7 @@ if (-not $ok) {
   - Win + R，输入ipconfig，将网关填入.ps1文件的$testHost中
 
 <p align="center">
-  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/ipconfig图示.png?raw=1" width="50%" alt="ipconfig图示">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/ipconfig图示2.png?raw=1" width="50%" alt="ipconfig图示">
 </p>
 
 # 3 WiFi属性设置
