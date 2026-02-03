@@ -36,9 +36,9 @@ Windows系统提供了“任务计划程序”能够为解决这一问题提供�
   - 这里可以定义与添加多个触发器，但是最重要的还是图中的第一个触发器，每隔一段时间检测网络是否连通，不连通的话出发任务。当然，也可以新建其他触发器，如图中就创建了一个在计算机启动时执行任务的触发器。
 
 <p align="center">
-  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/创建任务_触发器_图示拼接.png?raw=1" height="260" alt="创建任务_触发器_图示2">
-  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/创建任务_触发器_图示拼接.png?raw=1" height="260" alt="创建任务_触发器_图示3">
-  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/创建任务_触发器_图示拼接.png?raw=1" height="260" alt="创建任务_触发器_图示3">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/创建任务_触发器_图示拼接.png?raw=1" height="260" alt="创建任务_触发器_图示">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/创建任务_触发器_图示拼接2.png?raw=1" height="260" alt="创建任务_触发器_图示2">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/创建任务_触发器_图示拼接3.png?raw=1" height="260" alt="创建任务_触发器_图示3">
 </p>
 
 - 在操作下：
