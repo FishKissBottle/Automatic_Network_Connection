@@ -19,14 +19,16 @@ Windows系统提供了“任务计划程序”能够为解决这一问题提供�
 - 右击开始图标→计算机管理→任务计划程序→创建任务
 
 <p align="center">
-  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/创建任务图示.png?raw=1" width="50%" alt="创建任务图示.png">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/创建任务图示.png?raw=1" width="50%" alt="创建任务图示">
 </p>
 
 - 在常规下：
   - 设置任务的名称
   - 安全选项卡下：如果是需要通过远程桌面（RDP）来远程操控电脑的话，一定要选择“只在用户登录时运行”，如果选择了“不管用户是否登录都要运行”的话，就我个人的经验来看，会出现RDP一接管，被接管的计算机返回登录界面，网络直接断开的情况。
 
-<img src=".\Pic\创建任务_常规_图示.png" style="zoom:50%;" />
+<p align="center">
+  <img src="https://github.com/FishKissBottle/Automatic_Network_Connection/blob/main/Pic/创建任务_常规_图示.png?raw=1" width="50%" alt="创建任务_常规_图示">
+</p>
 
 - 在触发器下：
   - 触发器是指：在什么情况下触发目标任务的执行，比如是要一开机就执行一次？还是每隔一段时间执行一次？等等。
